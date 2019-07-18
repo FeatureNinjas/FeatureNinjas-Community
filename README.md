@@ -2,7 +2,7 @@
 
 <p>
   <a href="https://trello.com/b/OhatDfJ3/fn-dev"><img src="https://img.shields.io/static/v1.svg?logo=trello&label=Trello&message=Open%20Backlog&color=007AC0&style=for-the-badge"></a>
-  <a href=""><img src="https://img.shields.io/static/v1.svg?logo=twitter&label=Twitter&message=Follow%20Us&color=08A0E9&style=for-the-badge"></a>
+  <a href="https://twitter.com/featureninjas"><img src="https://img.shields.io/static/v1.svg?logo=twitter&label=Twitter&message=Follow%20Us&color=08A0E9&style=for-the-badge"></a>
 </p>
 
 # Welcome Ninja!
