@@ -29,10 +29,9 @@ Sample:
 # Version information (is always 1.0)
 version: 1.0
 
-# (optional)
+# (mandatory)
 # Feature toggle file name
-#   If this is set, contains the name of the file with the feature toggles. Defaults
-#   to fn-master.json in case it is not set.
+#   Contains the name of the file with the feature toggles.
 file: fn-master.json
 
 # (optional)
@@ -42,7 +41,7 @@ file: fn-master.json
 token: rtqoq85r1f6vejwuxtb1l
 ```
 
-4. Push a feature toggle configuration to your feature toggle repository. The default name of the configuration file is `fn-master.json`. If you specified a different name in the `.featureninjas.yml` configuration file, then this is used.
+4. Push a feature toggle configuration to your feature toggle repository. The name of the file is specified in the configuraiton file (see previous step).
 
 Sample:
 ```json
@@ -54,6 +53,10 @@ Sample:
 ```    
 4. Use a simple HTTPS GET command to access your feature toggles from anywhere.
 
+```curl
+curl -X GET \
+  https://api.featureninjas.com/gh/<account-name>/<repo-name>/<branch_ref_name> \
+  -H 'X-FeatureNinjas-Token: <token>'
 ```
-curl ...
-```
+
+This request always returns json in the body. The 'Accept' header is ignored.
