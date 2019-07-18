@@ -19,9 +19,30 @@ For bug reports, create issues in this repository as you know from other GitHub 
 
 # Get Started
 
-1. Create a repository that will host your feature toggle configuration. This can be public or private, be in a personal or organization account. (Note: You can use your projects source directory for the feature toggle configuration, but we don't suggest to do so. Keep your configuration separate so that you can control who and when it is changed.)
-2. FeatureNinjas is currently in Beta. To get started, send an eMail to stephan@featureninjas.com and request access. After you are given access, you will receive an eMail with a link to connect FeatureNinjas to your GitHub account. 
-3. Push a feature toggle configuration to your repository, created in step 1 and that you connected FeatureNinjas to in step 2. The name of the configuration file is currently limited to `fn-master.json`.
+1. Create a repository that will host your feature toggle configuration. This can be public or private, be in a personal or organization account. (Note: You can use your projects source repository for the feature toggles as well, but we don't suggest to do so. Keep your configuration separate so that you can control who and when it is changed.)
+2. FeatureNinjas is currently in Beta. To get access, send an eMail to stephan@featureninjas.com and request participation. After you are given access, you will receive an eMail with a link to connect FeatureNinjas to your GitHub account. 
+3. In your feature toggle repository, create a `.featureninjas.yml` configuration file. It controls what the name of the file is that contains the feature toggles, and gives you the ability to specify an optional read token that can be used to additionally secure the API.
+
+Sample:
+
+```yaml
+# Version information (is always 1.0)
+version: 1.0
+
+# (optional)
+# Feature toggle file name
+#   If this is set, contains the name of the file with the feature toggles. Defaults
+#   to fn-master.json in case it is not set.
+file: fn-master.json
+
+# (optional)
+# Security Token
+#   If this is set, then you have to provide this token via every request to
+#   get your feature toggle configuration in the HTTPS header X-FeatureNinjas-Token
+token: rtqoq85r1f6vejwuxtb1l
+```
+
+4. Push a feature toggle configuration to your feature toggle repository. The default name of the configuration file is `fn-master.json`. If you specified a different name in the `.featureninjas.yml` configuration file, then this is used.
 
 Sample:
 ```json
