@@ -58,7 +58,7 @@ Have a look at the fn-sample-simple repository (https://github.com/FeatureNinjas
 
 ```bash
 curl -X GET \
-  https://api.featureninjas.com/gh/<account-name>/<repo-name>/<branch_ref_name> \
+  https://api.featureninjas.com/t/<account-name>/<repo-name>/<branch_ref_name> \
   -H 'X-FeatureNinjas-Token: <token>'
 ```
 
