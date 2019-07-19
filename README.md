@@ -50,7 +50,10 @@ Sample:
   "backupInterval": 10000,
   "backupFileFormats": "xlsx|psql|csv"
 }
-```    
+```
+
+Have a look at the fn-sample-simple repository (https://github.com/FeatureNinjas/fn-sample-simple) for a very simple example of a feature toggle repository.
+
 4. Use a simple HTTPS GET command to access your feature toggles from anywhere.
 
 ```curl
