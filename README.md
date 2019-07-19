@@ -56,7 +56,7 @@ Have a look at the fn-sample-simple repository (https://github.com/FeatureNinjas
 
 4. Use a simple HTTPS GET command to access your feature toggles from anywhere.
 
-```curl
+```bash
 curl -X GET \
   https://api.featureninjas.com/gh/<account-name>/<repo-name>/<branch_ref_name> \
   -H 'X-FeatureNinjas-Token: <token>'
