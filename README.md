@@ -17,10 +17,6 @@ If you want to suggest new features, add an issue here in the repository with th
 
 For bug reports, create issues in this repository as you know from other GitHub projects.
 
-# Beta!
-
-FeatureNinjas is currently in Beta. To get access, send an eMail to stephan@featureninjas.com and request participation. After you are given access, you will receive an eMail with a link to connect FeatureNinjas to your GitHub account. 
-
 # Get Started
 
 1. Create a repository that will host your feature toggle configuration (if not done already). This can be public or private, be in a personal or organization account. (Note: You can use your projects source repository for the feature toggles as well, but we don't suggest to do so. Keep your configuration separate so that you can control who and when it is changed.)
